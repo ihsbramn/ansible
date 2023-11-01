@@ -4,9 +4,9 @@ import os
 import json
 
 target_host = os.getenv('TARGET_HOST')
-ssh_user = os.getenv('SSH_USER', 'vagrant')
-ssh_pass = os.getenv('SSH_PASS', 'vagrant')
-ssh_port = os.getenv('SSH_PORT', '22')
+ssh_user = os.getenv('SSH_USER')
+ssh_pass = os.getenv('SSH_PASS')
+ssh_port = os.getenv('SSH_PORT')
 
 inventory = {
     'web_servers': {
